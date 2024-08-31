@@ -2443,3 +2443,17 @@ a:hover.back-to-top {
 }
 /* end of min-width width 1200px */
 
+.navbar-brand.logo-text {
+    font-family: 'Montserrat', sans-serif; /* Use a clean, modern font */
+    font-size: 10px; /* Set a suitable size */
+    font-weight: 700; /* Bold text */
+    color: #ffffff; /* White color for contrast against dark backgrounds */
+    text-transform: uppercase; /* Makes the text all uppercase */
+    letter-spacing: 2px; /* Adds space between letters for a luxury feel */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.navbar-brand.logo-text:hover {
+    color: #ffcc00; /* Change color on hover to make it interactive */
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Adds a subtle glow effect */
+}

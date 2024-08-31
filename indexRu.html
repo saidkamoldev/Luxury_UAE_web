@@ -37,7 +37,7 @@
   <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
     <!-- Text Logo - Use this if you don't have a graphic logo -->
-    <a class="navbar-brand logo-text page-scroll" href="index.html">Логотип</a>
+    <a class="navbar-brand logo-text page-scroll" style="font-size: 20px;" href="index.html">Luxury Travel UAE</a>
 
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -598,40 +598,31 @@
             <div class="col-lg-6">
 
                 <!-- Форма связи -->
-                <form id="callMeForm" data-toggle="validator" data-focus="false">
+                <form id="contactForm" data-toggle="validator" data-focus="false">
                     <div class="form-group">
-                        <input type="text" class="form-control-input" id="lname" name="lname" required>
-                        <label class="label-control" for="lname">Имя</label>
+                        <input type="text" class="form-control-input" id="cname" required>
+                        <label class="label-control" for="cname">Имя</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control-input" id="lphone" name="lphone" required>
-                        <label class="label-control" for="lphone">Телефон</label>
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">Электронная почта</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control-input" id="lemail" name="lemail" required>
-                        <label class="label-control" for="lemail">Email</label>
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Ваше сообщение</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Я соглашаюсь с <a href="privacy-policy.html">Политикой конфиденциальности</a> и <a href="terms-conditions.html">Условиями и положениями</a> Luxury Travel UAE
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <select class="form-control-select" id="lselect" required>
-                            <option class="select-option" value="" disabled selected>Интересует...</option>
-                            <option class="select-option" value="Dubai Overview">Обзорный тур по Дубаю</option>
-                            <option class="select-option" value="Full Dubai Tour">Полный тур по Дубаю</option>
-                            <option class="select-option" value="Abu Dhabi Tour">Тур по Абу-Даби</option>
-                        </select>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="form-group checkbox white">
-                        <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>Я согласен с <a class="white" href="privacy-policy.html">Политикой конфиденциальности</a> и <a class="white" href="terms-conditions.html">Условиями</a> Luxury Tour UAE.
-                        <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="form-control-submit-button">СВЯЖИТЕСЬ СО МНОЙ</button>
+                        <button type="submit" class="form-control-submit-button">ОТПРАВИТЬ СООБЩЕНИЕ</button>
                     </div>
                     <div class="form-message">
-                        <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                     </div>
                 </form>
                 <!-- конец формы связи -->
@@ -902,54 +893,68 @@
 
 
 
- <!-- О нас -->
+ <!-- About -->
 <div id="about" class="counter">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-xl-6">
                 <div class="image-container">
-                    <img class="img-fluid" src="images/dubaitaype.jpg" alt="альтернатива">
-                </div> <!-- конец image-container -->
-            </div> <!-- конец col -->
+                    <img class="img-fluid" style="margin-top: 80px;" src="images/crasss.jpeg" alt="Infiniti Q50 Travel">
+                    <style>
+                        /* Media query for mobile devices */
+                        @media (max-width: 767px) {
+                            .img-fluid {
+                                margin-top: 0 !important;
+                            }
+                        }
+                    </style>
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
             <div class="col-lg-7 col-xl-6">
                 <div class="text-container">
                     <div class="section-title">О НАС</div>
-                    <h2>Почувствуйте непревзойденную роскошь и комфорт в ОАЭ</h2>
-                    <p>Наша миссия - предоставить эксклюзивные и высококачественные туристические услуги, позволяющие вам исследовать самые знаковые достопримечательности ОАЭ с максимальным комфортом и персонализированным обслуживанием.</p>
+                    <h2>Путешествуйте с комфортом на Infiniti Q50 и эксклюзивными авиатурам</h2>
+                    <p>Испытайте роскошь, как никогда раньше, с нашими эксклюзивными турами на Infiniti Q50, полетами на вертолете и арендой частных самолетов. Путешествуйте по ОАЭ в непревзойденном комфорте и элегантности.</p>
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body">Каждое путешествие адаптировано под ваши предпочтения и ожидания.</div>
+                            <div class="media-body">Наслаждайтесь частными турами на роскошном Infiniti Q50, совмещающем стиль и комфорт.</div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body">Присоединяйтесь к нам, чтобы исследовать ОАЭ с оттенком роскоши и эксклюзивности.</div>
+                            <div class="media-body">Откройте для себя Дубай с высоты птичьего полета на вертолетных экскурсиях над знаковыми достопримечательностями.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Арендуйте частный самолет для эксклюзивного и персонализированного воздушного путешествия.</div>
                         </li>
                     </ul>
 
-                    <!-- Счетчик -->
+                    <!-- Counter -->
                     <div id="counter">
                         <div class="cell">
                             <div class="counter-value number-count" data-count="231">1</div>
-                            <div class="counter-info">Счастливые<br>Пользователи</div>
+                            <div class="counter-info">Довольных<br>Пользователей</div>
                         </div>
                         <div class="cell">
                             <div class="counter-value number-count" data-count="121">1</div>
-                            <div class="counter-info">Решенные<br>Проблемы</div>
+                            <div class="counter-info">Завершенных<br>Туров</div>
                         </div>
                         <div class="cell">
                             <div class="counter-value number-count" data-count="159">1</div>
-                            <div class="counter-info">Положительные<br>Отзывы</div>
+                            <div class="counter-info">Положительных<br>Отзывов</div>
                         </div>
                     </div>
-                    <!-- конец счетчика -->
+                    <!-- end of counter -->
 
-                </div> <!-- конец text-container -->
-            </div> <!-- конец col -->
-        </div> <!-- конец row -->
-    </div> <!-- конец container -->
-</div> <!-- конец counter -->
-<!-- конец о нас -->
+                </div> <!-- end of text-container -->      
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of counter -->
+
+<!-- end of about -->
+
 
 <!-- Контакт -->
 <div id="contact" class="form-2">

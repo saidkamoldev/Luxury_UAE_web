@@ -49,7 +49,8 @@
    <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
     <!-- Text Logo - Use this if you don't have a graphic logo -->
-    <a class="navbar-brand logo-text page-scroll" href="index.html">Logo</a>
+    <a class="navbar-brand logo-text page-scroll" style="font-size: 20px;" href="index.html">Luxury Travel UAE</a>
+
 
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -621,40 +622,31 @@
                 <div class="col-lg-6">
     
                     <!-- Call Me Form -->
-                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="lname" name="lname" required>
-                            <label class="label-control" for="lname">Name</label>
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="lphone" name="lphone" required>
-                            <label class="label-control" for="lphone">Phone</label>
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="lemail" name="lemail" required>
-                            <label class="label-control" for="lemail">Email</label>
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Luxury Travel UAE's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a> 
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <select class="form-control-select" id="lselect" required>
-                                <option class="select-option" value="" disabled selected>Interested in...</option>
-                                <option class="select-option" value="Dubai Overview">Dubai Overview</option>
-                                <option class="select-option" value="Full Dubai Tour">Full Dubai Tour</option>
-                                <option class="select-option" value="Abu Dhabi Tour">Abu Dhabi Tour</option>
-                            </select>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox white">
-                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>I agree with Luxury Tour UAE's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CALL ME</button>
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
                         </div>
                         <div class="form-message">
-                            <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                     </form>
                     <!-- end of call me form -->
@@ -933,26 +925,40 @@
             <div class="row">
                 <div class="col-lg-5 col-xl-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/dubaitaype.jpg" alt="alternative">
+                     
+                        
+                        <img class="img-fluid" style="margin-top: 80px;" src="images/crasss.jpeg" alt="Infiniti Q50 Travel">
+                        <style>
+                            /* Media query for mobile devices */
+                            @media (max-width: 767px) {
+                                .img-fluid {
+                                    margin-top: 0 !important;
+                                }
+                            }
+                        </style>
+                        
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7 col-xl-6">
                     <div class="text-container">
                         <div class="section-title">ABOUT</div>
-                        <h2>Experience Unmatched Luxury and Comfort in the UAE</h2>
-                        <p>Our mission is to provide exclusive, high-quality travel experiences that allow you to explore the UAE’s most iconic landmarks with top-tier comfort and personalized services.</p>
+                        <h2>Travel in Style with Infiniti Q50 and Exclusive Air Tours</h2>
+                        <p>Experience luxury like never before with our exclusive Infiniti Q50 tours, helicopter rides, and private jet rentals. Travel across the UAE in unmatched comfort and elegance.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Every journey is tailored to meet your preferences and expectations.</div>
+                                <div class="media-body">Enjoy private tours in the luxurious Infiniti Q50, blending style and comfort.</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Join us in exploring the UAE with a touch of luxury and exclusivity.</div>
+                                <div class="media-body">Take your adventure to the skies with helicopter tours over Dubai’s iconic landmarks.</div>
                             </li>
-                        </ul>>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Rent a private jet for an exclusive, personalized air travel experience.</div>
+                            </li>
                         </ul>
-
+    
                         <!-- Counter -->
                         <div id="counter">
                             <div class="cell">
@@ -961,20 +967,21 @@
                             </div>
                             <div class="cell">
                                 <div class="counter-value number-count" data-count="121">1</div>
-                                <div class="counter-info">Issues<br>Solved</div>
+                                <div class="counter-info">Tours<br>Completed</div>
                             </div>
                             <div class="cell">
                                 <div class="counter-value number-count" data-count="159">1</div>
-                                <div class="counter-info">Good<br>Reviews</div>
+                                <div class="counter-info">Positive<br>Reviews</div>
                             </div>
                         </div>
                         <!-- end of counter -->
-
+    
                     </div> <!-- end of text-container -->      
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of counter -->
+    
     <!-- end of about -->
 
 <!-- Contact -->

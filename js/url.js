@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             var data = {
-                f_i_o: name,
-                telefon_raqam: phone,
+                name: name,
+                phone_number: phone,
                 message: message
             };
 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function sendDataToServer(data) {
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://0.0.0.0:8000/admin/client/client/', true);
+    xhr.open('POST', 'http://0.0.0.0:8000/client/', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('X-CSRFToken', getCookie('csrftoken')); // CSRF token yuborish
     xhr.onload = function() {

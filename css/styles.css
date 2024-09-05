@@ -2457,3 +2457,31 @@ a:hover.back-to-top {
     color: #ffcc00; /* Change color on hover to make it interactive */
     text-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Adds a subtle glow effect */
 }
+
+
+@media (max-width: 476px) {
+	.navbar-brand.logo-text {
+		font-size: 12px !important; /* Set font size to 10px for mobile */
+	}
+}
+
+
+/* Ikonkalarni umumiy kattalashtirish */
+.fa-stack {
+    font-size: 1.4rem; /* Standart hajm */
+	margin: 10px;
+}
+
+/* Kattaroq ekranlar uchun (desktop) */
+@media (min-width: 768px) {
+    .fa-stack {
+        font-size: 1.4rem; /* Desktop ekranlar uchun o'lcham */
+    }
+}
+
+/* Mobil ekranlar uchun (kichik ekranlar) */
+@media (max-width: 576px) {
+    .fa-stack {
+        font-size: 1rem; /* Mobil ekranlar uchun kichikroq hajm */
+    }
+}

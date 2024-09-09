@@ -167,7 +167,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function sendDataToServer(data) {
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://0.0.0.0:8000/client/', true);
+    xhr.open('POST', 'https://admin.tarnsfer-travel.uz/client/', true);
+    // xhr.open('POST', 'http://0.0.0.0:8000/client/', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('X-CSRFToken', getCookie('csrftoken')); // CSRF token yuborish
     xhr.onload = function() {

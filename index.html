@@ -517,25 +517,26 @@
             </div> <!-- конец col -->
             <div class="col-lg-6">
 
-                <!-- Форма связи -->
+            <!-- Форма "Свяжитесь со мной" -->
                 <form id="contactForm" data-toggle="validator" data-focus="false">
                     <div class="form-group">
-                        <input type="text" class="form-control-input" id="cname" required>
+                        <input type="text" class="form-control-input" id="cname" name="cname" required>
                         <label class="label-control" for="cname">Имя</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control-input" id="cemail" required>
-                        <label class="label-control" for="cemail">Электронная почта</label>
+                        <input type="tel" class="form-control-input" id="ctel" name="ctel" required>
+                        <label class="label-control" for="ctel">Номер телефона</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <textarea class="form-control-textarea" id="cmessage" name="cmessage" required></textarea>
                         <label class="label-control" for="cmessage">Ваше сообщение</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group checkbox">
-                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Я соглашаюсь с <a href="privacy-policy.html">Политикой конфиденциальности</a> и <a href="terms-conditions.html">Условиями и положениями</a> Luxury transfer and travel
+                        <input type="checkbox" id="cterms" name="cterms" value="Agreed-to-Terms" required>
+                        Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a> и <a href="terms-conditions.html">Условиями и положениями</a> Luxury Transfer and Travel
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
@@ -545,7 +546,8 @@
                         <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                     </div>
                 </form>
-                <!-- конец формы связи -->
+
+                                <!-- конец формы связи -->
 
             </div> <!-- конец col -->
         </div> <!-- конец row -->
@@ -921,24 +923,26 @@
             </div> <!-- конец col -->
             <div class="col-lg-6">
                 <!-- Форма обратной связи -->
+            <!-- Форма "Свяжитесь со мной" -->
                 <form id="contactForm" data-toggle="validator" data-focus="false">
                     <div class="form-group">
-                        <input type="text" class="form-control-input" id="cname" required>
+                        <input type="text" class="form-control-input" id="cname" name="cname" required>
                         <label class="label-control" for="cname">Имя</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control-input" id="cemail" required>
-                        <label class="label-control" for="cemail">Электронная почта</label>
+                        <input type="tel" class="form-control-input" id="ctel" name="ctel" required>
+                        <label class="label-control" for="ctel">Номер телефона</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <textarea class="form-control-textarea" id="cmessage" name="cmessage" required></textarea>
                         <label class="label-control" for="cmessage">Ваше сообщение</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group checkbox">
-                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Я соглашаюсь с <a href="privacy-policy.html">Политикой конфиденциальности</a> и <a href="terms-conditions.html">Условиями и положениями</a> Luxury transfer and travel
+                        <input type="checkbox" id="cterms" name="cterms" value="Agreed-to-Terms" required>
+                        Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a> и <a href="terms-conditions.html">Условиями и положениями</a> Luxury Transfer and Travel
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
@@ -948,12 +952,14 @@
                         <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                     </div>
                 </form>
+
                 <!-- конец формы обратной связи -->
             </div> <!-- конец col -->
         </div> <!-- конец row -->
     </div> <!-- конец container -->
 </div> <!-- конец form-2 -->
 <!-- конец контакт -->
+
 
   <!-- Футер -->
 <div class="footer">
@@ -999,6 +1005,7 @@
 
     	
     <!-- Scripts -->
+    <script src="js/url.js" ></script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
